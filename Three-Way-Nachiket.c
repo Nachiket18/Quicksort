@@ -139,8 +139,9 @@ int main()
     int c[] = {6,6,5,5,5,5,5,4,4,3,3,3,2,2,2,2,2,2,1,1};
 
     int dataset[10000];
-    generateDataset(dataset);
-    randomize(dataset,10000);
+   
+    generateDataset(dataset); // Generation of the dataset with few distinct elements
+    randomize(dataset,10000); // Shuffling of the data
 
     printf("\n");
     // Function call to partition the array
