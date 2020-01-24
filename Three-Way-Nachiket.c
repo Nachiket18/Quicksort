@@ -4,6 +4,8 @@
 int calculateComparisons = 0;
 int calculateSwaps = 0;
 
+/* generateDataset generates data for testing. One has to change unique values to control number of distinct elements */
+
 void generateDataset(int a[])
 {
  int uniQueValues = 100;
@@ -25,7 +27,7 @@ void generateDataset(int a[])
 
 
 }
-
+/* The randomize function shuffles data */
 void randomize ( int arr[], int n )
 {
     // Use a different seed value so that we don't get same
@@ -45,7 +47,7 @@ void randomize ( int arr[], int n )
 }
 
 
-
+/* Swapping Two elements */
 void swap(int *a, int *b)
 {
     int temp;
@@ -58,7 +60,7 @@ void swap(int *a, int *b)
 }
 
 
-/* partition function */
+/* partition function partitions data as per newly developed algorithm  which partition data into three parts*/
 void partition(int a[], int low, int high)
 {
     //printf("Partitioning");
@@ -131,6 +133,7 @@ void partition(int a[], int low, int high)
         return;
 }
 
+/* main function that generates the data, shuffles and the partitions the data */
 
 int main()
 {
